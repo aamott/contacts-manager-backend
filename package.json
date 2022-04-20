@@ -1,0 +1,25 @@
+{
+  "name": "cse341-node",
+  "version": "1.0.0",
+  "description": "First class project",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aamott/cse341-node.git"
+  },
+  "keywords": [
+    "wdd341"
+  ],
+  "author": "aamott",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aamott/cse341-node/issues"
+  },
+  "homepage": "https://github.com/aamott/cse341-node#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
