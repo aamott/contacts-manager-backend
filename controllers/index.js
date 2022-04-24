@@ -1,7 +1,7 @@
-/* displayJoke
+/* displayname
    req - request
    res - response */
-displayJoke = (req, res) => {
+displayname = (req, res) => {
     const data =
         'Ammon Richards';
     // send status, then send data. data doesn't have to be sent, it can 
@@ -11,5 +11,5 @@ displayJoke = (req, res) => {
 
 
 module.exports = {
-    displayJoke,
+    displayname,
 };
