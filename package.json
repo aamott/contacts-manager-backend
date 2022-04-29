@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/aamott/cse341-node#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongodb": "^4.5.0"
   }
 }
