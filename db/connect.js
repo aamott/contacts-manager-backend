@@ -2,8 +2,6 @@ const dotenv = require('dotenv');
 dotenv.config();
 const MongoClient = require('mongodb').MongoClient;
 
-console.log("Uri is: ", process.env.MONGODB_URI);
-
 let _db;
 
 const initDb = (callback) => {
