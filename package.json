@@ -1,27 +1,21 @@
 {
-  "name": "cse341-node",
+  "name": "REST-practice",
   "version": "1.0.0",
-  "description": "First class project",
-  "main": "server.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "test": "test"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aamott/cse341-node.git"
-  },
-  "keywords": [
-    "wdd341"
-  ],
-  "author": "aamott",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/aamott/cse341-node/issues"
-  },
-  "homepage": "https://github.com/aamott/cse341-node#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "dotenv": "^16.0.0",
-    "express": "^4.17.3",
-    "mongodb": "^4.5.0"
+    "express": "^4.16.3",
+    "mongodb": "^4.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
   }
 }
