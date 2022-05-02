@@ -5,6 +5,9 @@ const port = process.env.PORT || 3000;
 
 app.use('/', require('./routes'));
 
+
+
+
 database.initDb((err) => {
   if (err) {
     console.log(err);
