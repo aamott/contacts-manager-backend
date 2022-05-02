@@ -16,6 +16,8 @@
     "mongodb": "^4.4.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.4"
+    "eslint": "^8.14.0",
+    "nodemon": "^1.19.4",
+    "prettier": "^2.6.2"
   }
 }
