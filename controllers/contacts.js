@@ -49,10 +49,10 @@ const postNew = async ( req, res, next ) => {
       .collection( 'contacts' )
       .insertOne( newContact );
     res.setHeader( 'Content-Type', 'application/json' );
-    res.status( 200 ).json( result.insertedId );
+    res.status( 201 ).json( result.insertedId );
   } else {
     res.setHeader( 'Content-Type', 'application/json' );
-    res.status( 400 ).json( {
+    res.status( 500 ).json( {
       error: 'Missing required fields'
     } );
   }
@@ -84,7 +84,7 @@ const updateContact = async ( req, res, next ) => {
   if ( result.modifiedCount === 1 ) {
     res.status( 200 ).json( result.modifiedCount );
   } else {
-    res.status( 404 ).json( ( result.error || "An error occured while updating contact" ) );
+    res.status( 500 ).json( ( result.error || "An error occured while updating contact" ) );
   }
 };
 
