@@ -29,8 +29,8 @@ Content-Type: application/json
 }
 ###
 PUT http://localhost:8080/contacts/62773bca4b71f495e99a5451 HTTP/1.1
+Content-Type: application/json
 
-Content-Type: application/JSON
 {
   "firstName": "UpdatedJoe",
   "lastName": "Don",
@@ -51,3 +51,15 @@ GET https://fathomless-mountain-23773.herokuapp.com/contacts/622023f642f9ab4cd6e
 GET https://fathomless-mountain-23773.herokuapp.com/contacts/622023f642f9ab4cd6e060b3
 ###
 GET https://fathomless-mountain-23773.herokuapp.com/contacts/622023f642f9ab4cd6e060b4
+
+###
+PUT https://fathomless-mountain-23773.herokuapp.com/contacts/62773bca4b71f495e99a5451 HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "UpdatedJoe",
+  "lastName": "Don",
+  "email": "jdon@test.com",
+  "favoriteColor": "White",
+  "birthday": "1987/03/09"
+}
