@@ -5,8 +5,9 @@ const ObjectId = require( 'mongodb' ).ObjectId;
  * GET ALL CONTACTS
  */
 const getAll = async ( req, res, next ) => {
-  // DEBUGGING
-  // console.log("Getting all users")
+  /*
+    #swagger.description = "Get all contacts"
+  */
   const result = await mongodb.getDb().db().collection( 'contacts' ).find();
   result.toArray().then( ( lists ) => {
     res.setHeader( 'Content-Type', 'application/json' );
@@ -15,6 +16,9 @@ const getAll = async ( req, res, next ) => {
 };
 
 const getSingle = async ( req, res, next ) => {
+  /*
+    #swagger.description = "Get a single contact"
+  */
   const userId = new ObjectId( req.params.id );
   const result = await mongodb
     .getDb()
@@ -34,6 +38,9 @@ const getSingle = async ( req, res, next ) => {
  * POST NEW CONTACT
  */
 const postNew = async ( req, res, next ) => {
+  /*
+    #swagger.description = "Create a new contact"
+  */
   if ( req.body.firstName && req.body.lastName &&
     req.body.email && req.body.favoriteColor && req.body.birthday ) {
     const newContact = {
@@ -63,6 +70,9 @@ const postNew = async ( req, res, next ) => {
  * PUT UPDATE CONTACT
  */
 const updateContact = async ( req, res, next ) => {
+  /*
+    #swagger.description = "Update a contact"
+  */
   const userId = new ObjectId( req.params.id );
   const update = {
     firstName: req.body.firstName,
@@ -94,6 +104,9 @@ const updateContact = async ( req, res, next ) => {
  * DELETE CONTACT
  */
 const deleteContact = async ( req, res, next ) => {
+  /*
+    #swagger.description = "Delete a contact"
+  */
   const userId = new ObjectId( req.params.id );
   const result = await mongodb
     .getDb()
