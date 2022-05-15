@@ -1,13 +1,11 @@
 const swaggerAutogen = require( 'swagger-autogen' )();
 
-const port = process.env.PORT || 8080;
-
 const doc = {
     info: {
         title: 'Contacts API',
         description: 'API for managing contacts. This is a sample API for learning purposes.',
     },
-    host: 'fathomless-mountain-23773.herokuapp.com:' + port,
+    host: 'fathomless-mountain-23773.herokuapp.com',
     schemes: [ 'https'],
 };
 
