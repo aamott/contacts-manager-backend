@@ -7,7 +7,7 @@ const doc = {
         title: 'Contacts API',
         description: 'API for managing contacts. This is a sample API for learning purposes.',
     },
-    host: 'https://fathomless-mountain-23773.herokuapp.com:' + port,
+    host: 'fathomless-mountain-23773.herokuapp.com:' + port,
     schemes: [ 'https'],
 };
 
