@@ -5,10 +5,11 @@
     "description": "API for managing contacts. This is a sample API for learning purposes.",
     "version": "1.0.0"
   },
-  "host": "https://fathomless-mountain-23773.herokuapp.com:8080",
+  "host": "fathomless-mountain-23773.herokuapp.com:8080",
   "basePath": "/",
   "schemes": [
-    "http"
+    "http",
+    "https"
   ],
   "paths": {
     "/api-docs": {
