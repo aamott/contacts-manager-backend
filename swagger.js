@@ -8,7 +8,7 @@ const doc = {
         description: 'API for managing contacts. This is a sample API for learning purposes.',
     },
     host: 'https://fathomless-mountain-23773.herokuapp.com:' + port,
-    schemes: [ 'http' , 'https'],
+    schemes: [ 'https'],
 };
 
 const outputFile = './swagger.json';
