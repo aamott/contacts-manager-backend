@@ -47,10 +47,6 @@ DELETE http://localhost:8080/contacts/62773b8e4b71f495e99a5450
 GET https://fathomless-mountain-23773.herokuapp.com/contacts
 ###
 GET https://fathomless-mountain-23773.herokuapp.com/contacts/622023f642f9ab4cd6e060b2
-###
-GET https://fathomless-mountain-23773.herokuapp.com/contacts/622023f642f9ab4cd6e060b3
-###
-GET https://fathomless-mountain-23773.herokuapp.com/contacts/622023f642f9ab4cd6e060b4
 
 ###
 POST https://fathomless-mountain-23773.herokuapp.com/contacts HTTP/1.1
